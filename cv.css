@@ -1,0 +1,9 @@
+.cv {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.cv_bill_div {
+  width: 50%;
+  margin: auto;
+}

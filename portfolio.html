@@ -1,0 +1,390 @@
+<!DOCTYPE html>
+<html lang="da">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+
+
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat+Alternates&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Annie+Use+Your+Telescope&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="zgenerelt.css">
+    <link rel="stylesheet" href="portfolio.css">
+</head>
+
+<body>
+    <header>
+        <div>
+            <a href="forside.html"><img src="img/logo_blue.svg" alt="Logo" class="logo"></a>
+        </div>
+        <nav>
+            <ul class="menu">
+                <li><a href="portfolio.html">Portfolio</a></li>
+                <li><a href="cv.html">CV</a></li>
+            </ul>
+            <div class="burger">
+                <div class="line"></div>
+                <div class="line"></div>
+                <div class="line"></div>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <img src="img/header9.svg" alt="headeren" class="header_top">
+        <div class="header_hoejre"></div>
+        <div class="header_venstre"></div>
+        <h1>Mine projekter</h1>
+        <div class="alle_postkort">
+            <a href="#02_web">
+                <img src="img/postkost_web.png" alt="postkort web">
+            </a>
+            <a href="#03_ux">
+                <img src="img/postkost_web.png" alt="postkort web">
+            </a>
+            <a href="#03_ui">
+                <img src="img/postkost_web.png" alt="postkort web">
+            </a>
+            <a href="#04_animation">
+                <img src="img/postkost_web.png" alt="postkort web">
+            </a>
+            <a href="#05_videosite">
+                <img src="img/postkost_web.png" alt="postkort web">
+            </a>
+            <a href="#05_redesign">
+                <img src="img/postkost_web.png" alt="postkort web">
+            </a>
+        </div>
+
+        <!---------------- 02_WEB ------------------>
+        <div class="main_div" id="02_web">
+            <!-- First Set of Image and Buttons -->
+            <div class="foto_div">
+                <div class="foto_bill">
+                    <img id="bannerImage1" src="img/02_web_forside.svg" alt="hvid_foto">
+                </div>
+                <div class="knapper">
+                    <button onclick="changeImage('bannerImage1','img/02_mobil.png')">Foto 2.1</button>
+                    <button onclick="changeImage('bannerImage1','img/02_desktop.png')">Foto 2.2</button>
+                    <button onclick="changeImage('bannerImage1','img/02_web_forside.svg')">Orginal</button>
+                </div>
+            </div>
+
+            <div class="txt_div">
+                <div class="overskift">
+                    <div class="txt_overskift">
+                        <h2>02 WEB</h2>
+                        <div class="link">
+                            <a href="https://anikaborup.dk/kea/05_indhold/redesign/index.html">
+                                <h3>Min Computer</h3>
+                            </a>
+                        </div>
+
+                    </div>
+                    <div>
+                        <img src="img/group15.svg" alt="fri" class="fri">
+                    </div>
+                </div>
+                <p>I Tema 02_web blev vi introduceret for et responsivt design. Dette betød at vores site
+                    skulle fungere
+                    på både mobilen og
+                    desktop.
+                    Dette kunne lade sig gøre ved at bruge mediaqueries, samt grid og flex i CSS.
+                </p>
+                <p>
+                    Det løste jeg ved at starte mit design til mobilen, her brugte jeg mediaqueries til at sortere hvad
+                    der hørte til mobil
+                    og til desktop.
+                    Dette kan ses i ned nedestående boks 2.
+                </p>
+                <p>
+                    Som vist på billede 2.2 og 2.4, kan man se at jeg har valgt en mediaquerie til henholdsvis mobil og
+                    desktop. Til senere
+                    projekter har jeg kun brugt mediaqueries til desktop. Et eksempel er i 05_grundlæggende_indhold
+                    (LINK), hvor der kun er
+                    mediaqueries om desktop udgaven.</p>
+
+                <!-- <img src="img/02web_stempel-19.svg" alt="stempel" class="stempel1"> -->
+            </div>
+        </div>
+
+
+
+
+        <!-------------------- 03_ux 1 ---------------------->
+        <div class="main_div" id="03_ux">
+            <div class="foto_div">
+                <!-- Second Set of Image and Buttons -->
+                <div class="foto_bill">
+                    <img id="bannerImage2" src="img/hvid.png" alt="hvid_foto">
+                </div>
+                <div class="knapper">
+                    <button onclick="changeImage('bannerImage2','img/lilla.png')">lilla</button>
+                    <button onclick="changeImage('bannerImage2','img/groen.png')">grøn</button>
+                    <button onclick="changeImage('bannerImage2','img/hvid.png')">hvid</button>
+                </div>
+            </div>
+
+            <div class="txt_div">
+                <div class="overskift">
+                    <div class="txt_overskift">
+                        <h2>03 UI/UX</h2>
+                        <div class="link">
+                            <a href="https://anikaborup.dk/kea/05_indhold/redesign/index.html">
+                                <h3>StrikkeKnit</h3>
+                            </a>
+                        </div>
+
+                    </div>
+                    <img src="img/group15.svg" alt="fri" class="fri">
+                </div>
+                <p>I Tema 02_web blev vi introduceret for et responsivt design. Dette betød at vores site skulle
+                    fungere
+                    på både mobilen og
+                    desktop.
+                    Dette kunne lade sig gøre ved at bruge mediaqueries, samt grid og flex i CSS.
+                </p>
+                <p>
+                    Det løste jeg ved at starte mit design til mobilen, her brugte jeg mediaqueries til at sortere
+                    hvad
+                    der hørte til mobil
+                    og til desktop.
+                    Dette kan ses i ned nedestående boks 2.
+                </p>
+                <p>
+                    Som vist på billede 2.2 og 2.4, kan man se at jeg har valgt en mediaquerie til henholdsvis mobil
+                    og
+                    desktop. Til senere
+                    projekter har jeg kun brugt mediaqueries til desktop. Et eksempel er i 05_grundlæggende_indhold
+                    (LINK), hvor der kun er
+                    mediaqueries om desktop udgaven.</p>
+            </div>
+        </div>
+
+        <!----------------------- 03_UX 2 ------------------>
+        <div class="main_div" id="03_ui">
+            <!-- First Set of Image and Buttons -->
+            <div class="foto_div">
+                <div class="foto_bill">
+                    <img id="bannerImage3" src="img/02_web.png" alt="hvid_foto">
+                </div>
+                <div class="knapper">
+                    <button onclick="changeImage('bannerImage3','img/02_mobil.png')">Foto 2.1</button>
+                    <button onclick="changeImage('bannerImage3','img/02_desktop.png')">Foto 2.2</button>
+                    <button onclick="changeImage('bannerImage3','img/02_web.png')">Orginal</button>
+                </div>
+            </div>
+
+            <div class="txt_div">
+                <div class="overskift">
+                    <div class="txt_overskift">
+                        <h2>03 UI/UX</h2>
+                        <div class="link">
+                            <a href="https://anikaborup.dk/kea/05_indhold/redesign/index.html">
+                                <h3>StrikkeKnit</h3>
+                            </a>
+                        </div>
+
+                    </div>
+                    <img src="img/group15.svg" alt="fri" class="fri">
+                </div>
+                <p>I Tema 02_web blev vi introduceret for et responsivt design. Dette betød at vores site skulle
+                    fungere
+                    på både mobilen og
+                    desktop.
+                    Dette kunne lade sig gøre ved at bruge mediaqueries, samt grid og flex i CSS.
+                </p>
+                <p>
+                    Det løste jeg ved at starte mit design til mobilen, her brugte jeg mediaqueries til at sortere
+                    hvad
+                    der hørte til mobil
+                    og til desktop.
+                    Dette kan ses i ned nedestående boks 2.
+                </p>
+                <p>
+                    Som vist på billede 2.2 og 2.4, kan man se at jeg har valgt en mediaquerie til henholdsvis mobil
+                    og
+                    desktop. Til senere
+                    projekter har jeg kun brugt mediaqueries til desktop. Et eksempel er i 05_grundlæggende_indhold
+                    (LINK), hvor der kun er
+                    mediaqueries om desktop udgaven.</p>
+            </div>
+        </div>
+
+
+
+        <!--------------- 04_animation ------------>
+        <div class="main_div" id="04_animation">
+            <!-- First Set of Image and Buttons -->
+            <div class="foto_div">
+                <div class="foto_bill">
+                    <img id="bannerImage4" src="img/02_web.png" alt="hvid_foto">
+                </div>
+                <div class="knapper">
+                    <button onclick="changeImage('bannerImage4','img/02_mobil.png')">Foto 2.1</button>
+                    <button onclick="changeImage('bannerImage4','img/02_desktop.png')">Foto 2.2</button>
+                    <button onclick="changeImage('bannerImage4','img/02_web.png')">Orginal</button>
+                </div>
+            </div>
+
+
+            <div class="txt_div">
+                <div class="overskift">
+                    <div class="txt_overskift">
+                        <h2>04 animation</h2>
+                        <div class="link">
+                            <a href="https://anikaborup.dk/kea/05_indhold/redesign/index.html">
+                                <h3>Farmer Frank</h3>
+                            </a>
+                        </div>
+                    </div>
+                    <img src="img/group15.svg" alt="fri" class="fri">
+                </div>
+                <p>I tema 04_animation var vores formål at designe et spil, ved hjælp af figurelementer,
+                    ui-elementer,
+                    css-animationer og
+                    javascript. </p>
+                <p>
+                    Jeg har designet mine figurelementer i Adobe Illustator med henblik på kontraster og
+                    designprincipper. (se boks 4.1)
+                    I Javascript er der b.la. gjort brug af querySelectors og addEventListeners, for at få spillet
+                    til
+                    at fungere samt gøre
+                    mere interessant vha. lyd. (se boks 4.2)
+                    Derudover er der tilføjet CSS-animationer ved hjælp af Keyframes. (se boks 4.3)
+                </p>
+                <p>
+                    Denne færdighed har gjort mig i stand til at bruge JavaScript og CSS-animationer i min portfolio
+                    forside.
+
+                </p>
+
+            </div>
+        </div>
+
+
+        <!-- 05_videosite -->
+        <div class="main_div" id="05_videosite">
+            <!-- First Set of Image and Buttons -->
+            <div class="foto_div">
+                <div class="foto_bill">
+                    <img id="bannerImage5" src="img/02_web.png" alt="hvid_foto">
+                </div>
+                <div class="knapper">
+                    <button onclick="changeImage('bannerImage5','img/02_mobil.png')">Foto 2.1</button>
+                    <button onclick="changeImage('bannerImage5','img/02_desktop.png')">Foto 2.2</button>
+                    <button onclick="changeImage('bannerImage5','img/02_web.png')">Orginal</button>
+                </div>
+            </div>
+            <div class="txt_div">
+                <div class="overskift">
+                    <div class="txt_overskift">
+                        <h2>05 INDHOLD</h2>
+                        <div class="link">
+                            <a href="https://anikaborup.dk/kea/05_indhold/redesign/index.html">
+                                <h3>Videosite</h3>
+                            </a>
+                        </div>
+                    </div>
+                    <div>
+                        <img src="img/group15.svg" alt="fri" class="fri">
+                    </div>
+                </div>
+
+
+
+                <p>I Tema 05_grundlæggende_indhold var formålet at få en forståelse for videoudstyr til brug i
+                    digital
+                    medieproduktion,
+                    præproduktion og postproduktion.
+                </p>
+                <p>
+                    Til videosite videoen fik vi lov til at filme Tanja, som har en passion for malerarbejde.
+                    Til
+                    videoudstyr gjorde vi brug
+                    af Smartphones og DJI Osmo Pocket. Præproduktionen bestod at vi i gruppesamarbejde lavede et
+                    storyboard. Samt
+                    postproduktion hvor vi klippede hver for sig
+                </p>
+                <p>
+                    Vores storyboards kunne ikke bruges, da Tanjas opgave for dagen ikke det typiske
+                    malerarbejde
+                    som vi
+                    ufaglærte kender
+                    til. Derfor lærte jeg vigtigheden af at forhøre sig om omstændighederne og
+                    forventningsafstemme
+                    med
+                    hinanden, hvad der
+                    skal ske. Dette gjorde vi i opgave 05_grundlæggende_indhold redesign (LINK), som gjorde at
+                    storyboards var nemmere at
+                    bruge</p>
+            </div>
+
+        </div>
+
+        <!-- 05_redesign -->
+        <div class="main_div" id="05_redesign">
+            <!-- First Set of Image and Buttons -->
+            <div class="foto_div">
+                <div class="foto_bill">
+                    <img id="bannerImage6" src="img/02_web.png" alt="hvid_foto">
+                </div>
+                <div class="knapper">
+                    <button onclick="changeImage('bannerImage6','img/02_mobil.png')">Foto 2.1</button>
+                    <button onclick="changeImage('bannerImage6','img/02_desktop.png')">Foto 2.2</button>
+                    <button onclick="changeImage('bannerImage6','img/02_web.png')">Orginal</button>
+                </div>
+            </div>
+
+            <div class="txt_div">
+                <div class="overskift">
+                    <div class="txt_overskift">
+                        <h2>05 INDHOLD</h2>
+                        <div class="link">
+                            <a href="https://anikaborup.dk/kea/05_indhold/redesign/index.html">
+                                <h3>Redesign</h3>
+                            </a>
+                        </div>
+
+                    </div>
+                    <img src="img/group15.svg" alt="fri" class="fri">
+                </div>
+
+                <p>I Tema 05_grundlæggende_indhold var formålet at forbedre brugeroplevelsen for en virksomheds
+                    hjemmeside vha. at
+                    redesign.
+                </p>
+                <p>
+                    For at forbedre brugeroplevelsen undersøgte vi virksomhedens nuværende site, med en
+                    5-sekunders
+                    test
+                    og en BER-Test, som
+                    vi også brugte til den redesignet udgave.
+                </p>
+                <p>
+                    Testene viste hvor væsenlig en funktion de har, for at se om brugeroplevelsen er forbedret.
+                    Dette
+                    har jeg også gjort
+                    brug af i min portfolio opgave (LINK)</p>
+            </div>
+        </div>
+
+
+        <script>
+            function changeImage(imageId, fileName) {
+                let img = document.querySelector("#" + imageId);
+                if (img) {
+                    img.setAttribute("src", fileName);
+                } else {
+                    console.error("Image with ID " + imageId + " not found.");
+                }
+            }
+        </script>
+
+
+        <script src="burgermenu.js"></script>
+    </main>
+    <footer>
+
+    </footer>

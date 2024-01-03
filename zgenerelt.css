@@ -1,0 +1,175 @@
+/***********************************  RESET + BASE  ***********************************/
+* {
+  box-sizing: border-box;
+}
+
+body {
+  /* max-width: 1200px; */
+  margin: 0 auto;
+}
+
+main {
+  overflow: hidden;
+}
+
+img {
+  width: 100%;
+}
+
+/**************************************   HEADER GENRELT  ***************************************/
+
+header {
+  z-index: 1000;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  background-color: white;
+  padding: 1%;
+  padding-left: 5rem;
+  padding-right: 5rem;
+  margin-bottom: 0;
+
+  /* box-shadow: 0 0 5px #52525280; */
+}
+
+.header_top {
+  position: relative;
+  z-index: 15;
+}
+
+/***********************************  BURGERMENU  ***********************************/
+
+.burger {
+  width: 30px;
+  height: 20px;
+  cursor: pointer;
+  margin-right: 1rem;
+}
+
+.burger .line {
+  width: 100%;
+  height: 2px;
+  background-color: #04668c;
+  margin-bottom: 5px;
+  transition: 0.2s linear;
+}
+.burger {
+  display: none;
+}
+
+@media screen and (max-width: 800px) {
+  .menu {
+    display: none;
+    margin: 0;
+  }
+  .burger {
+    display: block;
+  }
+  .burger.active .line:nth-child(1) {
+    transform: rotate(45deg) translate(5px, 5px);
+    transition: 0.2s linear;
+  }
+
+  .burger.active .line:nth-child(2) {
+    opacity: 0;
+    transition: 0.15s linear;
+  }
+
+  .burger.active .line:nth-child(3) {
+    transform: rotate(-45deg) translate(5px, -5px);
+    transition: 0.2s linear;
+  }
+
+  nav.active .menu {
+    display: block;
+    background-color: #f2f2f2;
+    position: absolute;
+    left: 0;
+    top: 45px;
+    width: 100%;
+    height: 100%;
+    /* box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); */
+    z-index: 1;
+  }
+
+  nav.active .menu li {
+    margin: 2rem 0;
+  }
+}
+
+@media (min-width: 800px) {
+  /* HEADER */
+  header {
+    position: sticky;
+    top: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  header nav ul {
+    display: flex;
+    justify-content: space-between;
+    list-style: none;
+    margin: 0;
+    gap: 2rem;
+    overflow-x: auto;
+  }
+
+  .header_top {
+    position: fixed;
+    z-index: 15;
+  }
+}
+
+/***********************************  LINKS  ***********************************/
+
+a {
+  text-decoration: none;
+  color: #333333;
+  font-family: "Annie Use Your Telescope", cursive;
+  font-size: 2rem;
+}
+header a {
+  text-decoration: none;
+  color: #333333;
+}
+a:visited {
+  text-decoration: none;
+  color: #333333;
+}
+
+a:hover {
+  color: #ff00a6;
+}
+
+/***********************************  LISTEPUNKTER  ***********************************/
+
+/* Nedenstående er lånt herfra https://codepen.io/toianw/pen/YqEqrz */
+
+li {
+  list-style-type: none;
+}
+
+li > a {
+  display: inline-block;
+  position: relative;
+}
+
+li > a::after {
+  content: "";
+  display: block;
+  margin: auto;
+  height: 3px;
+  width: 0;
+  top: 5px;
+  background: transparent;
+  transition: all 0.3s;
+}
+
+li > a:hover::after,
+li > a.active-nav::after {
+  width: 100%;
+  background: #ff00a6;
+}
