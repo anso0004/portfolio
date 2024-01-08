@@ -1,105 +1,57 @@
-/********* SKAL MULIGVIS I GENEREL *********/
-
-h1 {
-  font-size: 4rem;
-  text-align: center;
-  color: #333333;
-  margin: 0;
-  margin-top: 5%;
-
-  font-family: "Annie Use Your Telescope", cursive;
+/************  VARIABLER  *************/
+html {
+  --font_1: "futura-pt", sans-serif;
+  --font_2: "Annie Use Your Telescope", cursive;
+  --moerkeblaa: #2c2d7d;
+  --orange: #f26419;
+  --lyseblaa: #d7e1ea;
+  --hvid: white;
+  --graa_s: #c2c2c2;
+  --graa_l: #e8e8e8;
+  --graa_m: #5f5f5f;
+}
+/* Streg under mine projekter */
+.menu_streg {
+  border-bottom: solid 2px var(--moerkeblaa);
+}
+/****************** Illusion af postkost ********************/
+p {
+  border-bottom: solid 2px var(--graa_s);
 }
 
 h2 {
-  font-size: 4rem;
-  /* text-align: center; */
-  color: #333333;
-  margin: 0;
-  border-top: solid 2px;
-  margin-top: 14%;
-  /* padding-top: 5%; */
-  margin-left: 13%;
-  font-family: "Annie Use Your Telescope", cursive;
-}
-h3 {
-  font-size: 1.2rem;
-  /* text-align: center; */
-  color: #333333;
-  margin: 0;
-  /* margin-top: 5%;
-  padding-top: 5%; */
-  margin-left: 13%;
-  font-family: "Annie Use Your Telescope", cursive;
+  border-top: solid 2px var(--graa_s);
 }
 
-p {
-  font-family: "Montserrat Alternates", sans-serif;
-  font-size: 0.9rem;
+.link_tema {
+  font-family: var(--font_1);
+  color: var(--orange);
+  font-size: 1rem;
+  border-bottom: solid 2px var(--orange);
 }
-
-main {
-  background-color: rgb(194, 163, 163);
-  background-color: rgb(222, 213, 213);
-}
-
-.header_bill {
-  position: relative;
-  z-index: 15;
-}
-
-.header_top {
-  margin-top: -1px;
-}
-
-.link {
-  width: fit-content;
-  background-color: #cc8080;
-  /* padding: 5%; */
-  margin-bottom: 2%;
-  border: none;
-  font-family: "Annie Use Your Telescope", cursive;
-  font-size: 1.2rem;
-  letter-spacing: 1.5px;
-  /* box-shadow: 0 0 10px #52525280; */
-  border-radius: 10px;
-  padding: 2% 0%;
-  margin-left: 13%;
-  padding-right: 5%;
-}
-
-/*********** Illusion af postkost **********/
+/* Første hvide kasse */
 .main_div {
-  padding: 2%;
-  margin: 3%;
-  /* margin-bottom: 30%; */
-  background-color: white;
+  padding: 3%;
+  margin: 4%;
+  background-color: var(--hvid);
 }
-
-.border_rundt {
-  border: solid 2px;
-}
-
+/* Anden grå kasse */
 .foto_div {
-  /* border: solid 2px; */
   padding: 7%;
-  /* margin: 3%; */
-  background-color: rgb(232, 232, 232);
-  width: 50%;
+  background-color: var(--graa_l);
   margin: auto;
-  /* box-sizing: content-box; */
 }
+/* Tredje mørke kasse */
 .foto_bill {
-  background-color: rgb(95, 95, 95);
+  background-color: var(--graa_m);
 }
-/* img {
-  border: solid 2px;
-} */
 
-p {
-  border-bottom: solid 2px rgba(128, 128, 128, 0.535);
-  padding: 2%;
-  margin: 5%;
+/* Skjuler frimærker på mobil */
+.fri {
+  display: none;
 }
+
+/* knappernes placering */
 .knapper {
   margin-top: 15%;
   display: flex;
@@ -107,109 +59,69 @@ p {
   justify-content: center;
   gap: 10%;
 }
+
+/* stylingen af knapperne */
 button {
-  background-color: #cc8080;
-  /* padding: 5%; */
+  background-color: var(--moerkeblaa);
+  color: var(--hvid);
   margin-bottom: 2%;
   border: none;
   font-family: "Annie Use Your Telescope", cursive;
-  font-size: 1.2rem;
+  font-size: 100%;
   letter-spacing: 1.5px;
-  /* box-shadow: 0 0 10px #52525280; */
   border-radius: 10px;
   padding: 2% 3%;
+  white-space: nowrap;
+  cursor: pointer;
 }
 
 button:hover {
-  color: #ff00a6;
+  background-color: var(--orange);
+  color: var(--hvid);
 }
 
 @media (min-width: 800px) {
-  .header_top {
-    position: fixed;
-    z-index: 15;
-    margin-top: -1px;
-    background-repeat: repeat-x;
+  h2,
+  link {
+    text-align: center;
+    border: none;
   }
+
+  .fri {
+    display: block;
+    width: 80%;
+  }
+
+  /* Hvid kasse opdeling */
   .main_div {
     display: grid;
     grid-template-columns: 1fr 1.5fr;
-
-    /* 
-    display: flex;
-    flex-direction: row; */
-    margin-left: 12%;
-    margin-right: 12%;
-  }
-
-  .alle_postkort {
-    display: flex;
-    flex-direction: row;
-    gap: 1%;
-    margin-left: 4%;
-    margin-right: 4%;
-    margin-top: 2%;
-    margin-bottom: 5%;
-  }
-  .foto_div {
-    width: 100%;
-  }
-
-  h2 {
-    border: none;
+    margin-left: 11%;
+    margin-right: 11%;
+    padding: 2%;
+    margin-bottom: 10%;
   }
 
   p {
     margin-left: 5%;
-    margin-right: 5%;
-    padding-left: 5%;
-    padding-right: 5%;
+    margin-right: 1%;
+    margin-top: 0;
+    padding-bottom: 1%;
+    padding-top: 1%;
   }
 
-  /* .stempel1 {
-    position: absolute;
-    width: 10%;
-    left: 44%;
-    top: 37%;
-    opacity: 60%;
-  } */
-
-  .stempel1 {
-    opacity: 60%;
-    width: 60%;
-    margin: auto;
-    float: right;
-  }
   .overskift {
     display: grid;
     grid-template-columns: 1.5fr 0.5fr;
   }
 
   .fri {
-    /* width: 50%; */
     float: right;
   }
 
-  .txt_overskift {
-    float: right;
-  }
-  .main_div {
-    overflow: hidden;
-  }
-
-  .header_hoejre {
-    float: right;
-    width: 1%;
-    height: 950vh;
-    background-image: url("img/side5.svg");
-    transform: rotate(180deg);
-    background-repeat: repeat-y;
-  }
-  .header_venstre {
-    float: left;
-    width: 1%;
-    height: 950vh;
-    background-image: url("img/side5.svg");
-    background-repeat: repeat-y;
+  /* Border på midten */
+  .txt_div {
+    border-left: solid 2px var(--graa_s);
+    margin-left: 25px;
   }
 }

@@ -9,20 +9,26 @@
 
     <link href="https://fonts.googleapis.com/css2?family=Montserrat+Alternates&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Annie+Use+Your+Telescope&display=swap" rel="stylesheet">
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
+
 
     <link rel="stylesheet" href="zgenerelt.css">
     <!-- <link rel="stylesheet" href="portfolio.css"> -->
     <link rel="stylesheet" href="forside.css">
+
 </head>
 
 <body>
     <header>
         <div>
-            <a href="forside.html"><img src="img/logo_blue.svg" alt="Logo" class="logo"></a>
+            <a href="forside.html"><img src="img/logo1.svg" alt="Logo" class="logo"></a>
         </div>
         <nav>
             <ul class="menu">
-                <li><a href="portfolio.html">Portfolio</a></li>
+                <li><a href="portfolio.html">Mine projekter</a></li>
                 <li><a href="cv.html">CV</a></li>
             </ul>
             <div class="burger">
@@ -33,11 +39,26 @@
         </nav>
     </header>
     <main>
-        <img src="img/forside.svg" alt="frimærke" class="fri">
-        <div>
-            <h1>Portfolio</h1>
-            <h2>Anika</h2>
+        <img src="img/header9.svg" alt="headeren" class="header_top">
+        <!-- <img src="img/forside1.svg" alt="forside"> -->
+        <div id="screen">
+            <div>
+                <div id="baggrund"></div>
+                <div id="elementer">
+                    <div class="port_container">
+                        <div id="port_sprite" class="port_slide"></div>
+                    </div>
+                    <div id="folio_container">
+                        <div id="folio_sprite" class="folio_slide"></div>
+                    </div>
+                    <div id="stempel_container">
+                        <div id="stempel_sprite" class="stempel_scale"></div>
+                    </div>
+                </div>
+                <div id="forgrund"></div>
+            </div>
         </div>
 
+        <script src="burgermenu.js"></script>
 
     </main>

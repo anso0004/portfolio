@@ -1,9 +1,52 @@
+/************  VARIABLER  *************/
+html {
+  --font_1: "futura-pt", sans-serif;
+  --font_2: "Annie Use Your Telescope", cursive;
+  --moerkeblaa: #2c2d7d;
+  --orange: #f26419;
+  --lyseblaa: #d7e1ea;
+  --hvid: white;
+  --graa_s: #c2c2c2;
+  --graa_l: #e8e8e8;
+  --graa_m: #5f5f5f;
+}
+
+/* Streg under CV */
+.menu_streg {
+  border-bottom: solid 2px var(--moerkeblaa);
+}
+/* læs mere folder ind til mobil */
+h3 {
+  white-space: normal;
+}
+
 .cv {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
+  padding: 2%;
+  margin: 3%;
 }
 
 .cv_bill_div {
-  width: 50%;
+  width: 70%;
   margin: auto;
+}
+
+@media (min-width: 800px) {
+  .cv {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin-left: 12%;
+    margin-right: 12%;
+    margin-top: 0;
+  }
+  /* De 3 p'er står på ventre side */
+  .order1 {
+    order: 1;
+    grid-column: 1 / 2;
+  }
+  /* Billede rykker fra plads 2 til 4 */
+  .order4 {
+    order: 4;
+    grid-column: 2 / 3;
+    grid-row: 1 / 4;
+  }
 }

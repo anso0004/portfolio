@@ -1,25 +1,151 @@
-.fri {
+main {
+  background-color: #d7e1ea;
+  min-height: 860px;
+}
+
+/* FORSIDE */
+
+#screen {
   width: 100%;
-  position: absolute;
-  z-index: -1;
+  aspect-ratio: 16/9;
+  position: relative;
+  container-type: inline-size;
+  margin-top: 20%;
 }
 
-h1 {
-  font-size: 10rem;
-  text-align: center;
-  color: #333333;
-  top: 20%;
-  left: 15%;
-  font-family: "Annie Use Your Telescope", cursive;
+#baggrund {
+  width: 100%;
+  height: 100%;
   position: absolute;
+  top: 0;
+  left: 0;
+  background-size: cover;
+  background-image: url(img/forside_baggrund.svg);
+}
+#elementer {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
 }
 
-h2 {
-  font-size: 7rem;
-  text-align: center;
-  color: #333333;
-  top: 42%;
-  left: 57%;
-  font-family: "Annie Use Your Telescope", cursive;
+#forgrund {
+  width: 100%;
+  height: 100%;
   position: absolute;
+  top: 0;
+  left: 0;
+  background-size: cover;
+  background-image: url(img/forside_forgrund.svg);
+  pointer-events: none;
+}
+
+.port_container {
+  width: 40%;
+  aspect-ratio: 1521.55/778.28;
+  position: absolute;
+  /* left: -10%; */
+  top: 17%;
+}
+
+#port_sprite {
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  background-image: url(img/port29.svg);
+}
+
+#folio_container {
+  width: 40%;
+  aspect-ratio: 1521.55/778.28;
+
+  position: absolute;
+  top: 55%;
+}
+
+#folio_sprite {
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  background-image: url(img/folio29.svg);
+}
+
+#stempel_container {
+  width: 100%;
+  aspect-ratio: 1060.87/983.07;
+  position: absolute;
+  /* top: 55%; */
+  bottom: -16%;
+  left: 27%;
+}
+
+#stempel_sprite {
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  background-image: url(img/stempel14.svg);
+}
+
+.port_slide {
+  animation-name: slide_kf;
+  animation-duration: 5s;
+  animation-timing-function: linear;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+}
+
+@keyframes slide_kf {
+  0% {
+    transform: translateX(-100%);
+  }
+  100% {
+    transform: translateX(50%);
+  }
+}
+
+.folio_slide {
+  animation-name: slide2_kf;
+  animation-duration: 5s;
+  animation-timing-function: linear;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+}
+
+@keyframes slide2_kf {
+  0% {
+    transform: translateX(260%);
+  }
+  100% {
+    transform: translateX(100%);
+  }
+}
+
+.stempel_scale {
+  animation-name: slide3_kf;
+  animation-duration: 6s;
+  animation-timing-function: linear;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+}
+
+@keyframes slide3_kf {
+  0% {
+    transform: scale(30);
+    opacity: 0;
+  }
+  90% {
+    transform: scale(30);
+    opacity: 0;
+  }
+  100% {
+    transform: scale(0.3);
+  }
+}
+
+@media (min-width: 800px) {
+  /* fjerner margin øverst på forsiden */
+  #screen {
+    margin-top: 0%;
+  }
 }

@@ -4,7 +4,6 @@
 }
 
 body {
-  /* max-width: 1200px; */
   margin: 0 auto;
 }
 
@@ -15,6 +14,140 @@ main {
 img {
   width: 100%;
 }
+/************  VARIABLER  *************/
+html {
+  --font_1: "futura-pt", sans-serif;
+  --font_2: "Annie Use Your Telescope", cursive;
+  --moerkeblaa: #2c2d7d;
+  --orange: #f26419;
+  --lyseblaa: #d7e1ea;
+  --hvid: white;
+  --graa_s: #c2c2c2;
+  --graa_l: #e8e8e8;
+  --graa_m: #5f5f5f;
+}
+
+/***************** GENRELT ***************/
+
+main {
+  background-color: var(--lyseblaa);
+}
+
+/************ COPY *********/
+h1 {
+  font-family: var(--font_1);
+  color: var(--moerkeblaa);
+  font-size: 3.5rem;
+  margin: 0;
+  margin-top: 5%;
+  text-align: center;
+}
+
+h2 {
+  font-family: var(--font_2);
+  color: var(--moerkeblaa);
+  font-size: 2.9rem;
+  margin: 0;
+  margin-top: 3%;
+  text-align: center;
+}
+
+h3 {
+  font-family: var(--font_2);
+  color: var(--moerkeblaa);
+  font-size: 1.3rem;
+  font-weight: 1000;
+  margin: 0;
+  white-space: nowrap;
+}
+p {
+  font-family: var(--font_1);
+  font-size: 1rem;
+  line-height: 1.5rem;
+}
+
+.orange {
+  color: var(--orange);
+  border-bottom: solid 2px var(--orange);
+}
+
+/* Dokumentation og præsentation */
+.orange2 {
+  color: var(--orange);
+  text-align: center;
+}
+/* fed skrift ved foto */
+.foto_txt {
+  font-weight: 1000;
+  color: var(--moerkeblaa);
+}
+
+@media (min-width: 800px) {
+  h1 {
+    font-size: 5rem;
+  }
+
+  h2 {
+    font-size: 3.6rem;
+  }
+}
+
+/* h3:hover {
+  color: #4055a0;
+  color: #f26419;
+} */
+/* 
+a {
+  list-style-type: none;
+}
+
+a {
+  display: inline-block;
+  position: relative;
+}
+
+a::after {
+  content: "";
+  display: block;
+  margin: auto;
+  height: 3px;
+  width: 0;
+  top: 5px;
+  background: transparent;
+  transition: all 0.3s;
+}
+
+a:hover::after,
+a.active-nav::after {
+  width: 100%;
+  background: #4055a0;
+  background: #f26419;
+} */
+
+/* .header_bill {
+  position: relative;
+  z-index: 15;
+}
+
+.header_top {
+  margin-top: -1px;
+} */
+
+.link {
+  margin-bottom: 2%;
+  letter-spacing: 1.5px;
+  border-radius: 10px;
+  text-align: center;
+  /* width: fit-content; */
+  /* background-color: #cc8080; */
+  /* padding: 5%; */
+  /* margin-bottom: 2%;
+  letter-spacing: 1.5px; */
+  /* box-shadow: 0 0 10px #52525280; */
+  /* border-radius: 10px; */
+  /* padding: 2% 0%; */
+  /* margin-left: 13%; */
+}
 
 /**************************************   HEADER GENRELT  ***************************************/
 
@@ -23,19 +156,62 @@ header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-
-  background-color: white;
+  background-color: var(--hvid);
   padding: 1%;
-  padding-left: 5rem;
-  padding-right: 5rem;
+  padding-left: 5%;
+  padding-right: 5%;
   margin-bottom: 0;
-
-  /* box-shadow: 0 0 5px #52525280; */
 }
 
 .header_top {
+  position: absolute;
+  margin-top: -1px;
+  /* z-index: 15; */
+}
+
+.logo {
+  aspect-ratio: 715/822;
+  margin-top: 2%;
+  margin-left: 4%;
+  width: 54px;
+  /* padding: 1rem; */
+  margin: 0;
+}
+
+/* .header_bill {
   position: relative;
   z-index: 15;
+} */
+
+@media (min-width: 800px) {
+  /*** HEADER Desktop ***/
+  header {
+    position: sticky;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    top: 0;
+  }
+
+  header nav ul {
+    display: flex;
+    justify-content: space-between;
+    list-style: none;
+    margin: 0;
+    gap: 2rem;
+    overflow-x: auto;
+  }
+
+  .header_top {
+    position: fixed;
+    z-index: 15;
+  }
+
+  .logo {
+    width: 6%;
+    aspect-ratio: 715/822;
+    margin-top: 0%;
+  }
 }
 
 /***********************************  BURGERMENU  ***********************************/
@@ -50,7 +226,7 @@ header {
 .burger .line {
   width: 100%;
   height: 2px;
-  background-color: #04668c;
+  background-color: var(--moerkeblaa);
   margin-bottom: 5px;
   transition: 0.2s linear;
 }
@@ -83,13 +259,13 @@ header {
 
   nav.active .menu {
     display: block;
-    background-color: #f2f2f2;
+    background-color: var(--lyseblaa);
     position: absolute;
     left: 0;
-    top: 45px;
+    top: 75px;
     width: 100%;
     height: 100%;
-    /* box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); */
+
     z-index: 1;
   }
 
@@ -98,50 +274,30 @@ header {
   }
 }
 
-@media (min-width: 800px) {
-  /* HEADER */
-  header {
-    position: sticky;
-    top: 0;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-  }
-
-  header nav ul {
-    display: flex;
-    justify-content: space-between;
-    list-style: none;
-    margin: 0;
-    gap: 2rem;
-    overflow-x: auto;
-  }
-
-  .header_top {
-    position: fixed;
-    z-index: 15;
-  }
-}
-
 /***********************************  LINKS  ***********************************/
 
 a {
   text-decoration: none;
-  color: #333333;
-  font-family: "Annie Use Your Telescope", cursive;
-  font-size: 2rem;
+  font-family: var(--font_2);
+  font-size: 1.5rem;
+  color: var(--moerkeblaa);
 }
 header a {
   text-decoration: none;
-  color: #333333;
+  color: var(--moerkeblaa);
 }
-a:visited {
+/* a:visited {
   text-decoration: none;
-  color: #333333;
-}
+
+} */
 
 a:hover {
-  color: #ff00a6;
+  color: var(--orange);
+  border-bottom: none;
+}
+
+.mailen {
+  font-size: 1rem;
 }
 
 /***********************************  LISTEPUNKTER  ***********************************/
@@ -155,6 +311,7 @@ li {
 li > a {
   display: inline-block;
   position: relative;
+  white-space: nowrap;
 }
 
 li > a::after {
@@ -171,5 +328,52 @@ li > a::after {
 li > a:hover::after,
 li > a.active-nav::after {
   width: 100%;
-  background: #ff00a6;
+  background: var(--orange);
+}
+
+/********************* FOOTER  **********************/
+.bund {
+  transform: rotate(180deg);
+  margin: -8px;
+}
+
+.iconer {
+  width: 5%;
+  margin-right: 4%;
+  margin-top: 2%;
+}
+
+.hele_footer {
+  top: 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1%;
+}
+.footer_txt {
+  margin-left: 4%;
+}
+.mail_icon {
+  width: 10%;
+}
+
+@media (min-width: 800px) {
+  /*** FOOTER Desktop ***/
+  .footer_txt {
+    margin: 0;
+    font-size: 1.3rem;
+    margin-left: 4%;
+  }
+  .mailen {
+    margin: auto;
+  }
+
+  .mail_icon {
+    width: 11%;
+  }
+  .iconer {
+    width: 2%;
+    margin-right: 4%;
+    margin-top: 2%;
+  }
 }

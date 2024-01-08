@@ -9,7 +9,12 @@
 
     <link href="https://fonts.googleapis.com/css2?family=Montserrat+Alternates&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Annie+Use+Your+Telescope&display=swap" rel="stylesheet">
-
+    <link href="https://fonts.googleapis.com/css2?family=Calligraffitti&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.typekit.net/alu1hko.css">
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
     <link rel="stylesheet" href="zgenerelt.css">
     <link rel="stylesheet" href="portfolio.css">
 </head>
@@ -17,11 +22,11 @@
 <body>
     <header>
         <div>
-            <a href="forside.html"><img src="img/logo_blue.svg" alt="Logo" class="logo"></a>
+            <a href="forside.html"><img src="img/logo1.svg" alt="Logo" class="logo"></a>
         </div>
         <nav>
             <ul class="menu">
-                <li><a href="portfolio.html">Portfolio</a></li>
+                <li><a href="portfolio.html" class="menu_streg">Mine projekter</a></li>
                 <li><a href="cv.html">CV</a></li>
             </ul>
             <div class="burger">
@@ -33,41 +38,20 @@
     </header>
     <main>
         <img src="img/header9.svg" alt="headeren" class="header_top">
-        <div class="header_hoejre"></div>
-        <div class="header_venstre"></div>
+
         <h1>Mine projekter</h1>
-        <div class="alle_postkort">
-            <a href="#02_web">
-                <img src="img/postkost_web.png" alt="postkort web">
-            </a>
-            <a href="#03_ux">
-                <img src="img/postkost_web.png" alt="postkort web">
-            </a>
-            <a href="#03_ui">
-                <img src="img/postkost_web.png" alt="postkort web">
-            </a>
-            <a href="#04_animation">
-                <img src="img/postkost_web.png" alt="postkort web">
-            </a>
-            <a href="#05_videosite">
-                <img src="img/postkost_web.png" alt="postkort web">
-            </a>
-            <a href="#05_redesign">
-                <img src="img/postkost_web.png" alt="postkort web">
-            </a>
-        </div>
+
 
         <!---------------- 02_WEB ------------------>
         <div class="main_div" id="02_web">
-            <!-- First Set of Image and Buttons -->
+            <!-- Div Genereret af ChatGPT -->
             <div class="foto_div">
                 <div class="foto_bill">
-                    <img id="bannerImage1" src="img/02_web_forside.svg" alt="hvid_foto">
+                    <img id="bannerImage1" src="img/02_web10.webp" alt="hvid_foto">
                 </div>
                 <div class="knapper">
-                    <button onclick="changeImage('bannerImage1','img/02_mobil.png')">Foto 2.1</button>
-                    <button onclick="changeImage('bannerImage1','img/02_desktop.png')">Foto 2.2</button>
-                    <button onclick="changeImage('bannerImage1','img/02_web_forside.svg')">Orginal</button>
+                    <button onclick="changeImage('bannerImage1','img/web1.webp')">Foto 2.1</button>
+                    <button onclick="changeImage('bannerImage1','img/web2.webp')">Foto 2.2</button>
                 </div>
             </div>
 
@@ -76,103 +60,118 @@
                     <div class="txt_overskift">
                         <h2>02 WEB</h2>
                         <div class="link">
-                            <a href="https://anikaborup.dk/kea/05_indhold/redesign/index.html">
-                                <h3>Min Computer</h3>
+                            <a href="https://anikaborup.dk/kea/02_web/01_website/website/index.html">
+                                <h3>Find min hjemmeside <span class="orange">her</span></h3>
                             </a>
                         </div>
-
                     </div>
-                    <div>
-                        <img src="img/group15.svg" alt="fri" class="fri">
-                    </div>
+                    <img src="img/stempel02.svg" alt="fri" class="fri">
                 </div>
-                <p>I Tema 02_web blev vi introduceret for et responsivt design. Dette betød at vores site
-                    skulle fungere
-                    på både mobilen og
-                    desktop.
-                    Dette kunne lade sig gøre ved at bruge mediaqueries, samt grid og flex i CSS.
+                <p>I tema 2 Grundlæggende web blev jeg introduceret for simpel kodning i HTML og CSS. Dette bestod i
+                    at
+                    lære hvordan man
+                    bruger grid i CSS, ved øvelser fra internettet, for at få en visuel forståelse. Jeg lærte også
+                    simpelt styling af
+                    fonter, baggrunde og knapper.
                 </p>
                 <p>
-                    Det løste jeg ved at starte mit design til mobilen, her brugte jeg mediaqueries til at sortere hvad
-                    der hørte til mobil
-                    og til desktop.
-                    Dette kan ses i ned nedestående boks 2.
+                    Jeg lærte i temaet hvordan man gør en hjemmeside responsiv vha. mediaqueries. Det løste jeg ved
+                    at
+                    sætte mediaqueries på henholdsvis mobil og desktop,
+                    se <span class="foto_txt">Foto 2.1</span> og <span class="foto_txt">Foto 2.2</span>.
+                    I senere
+                    projekter, eks. <a href="#05_redesign" class="link_tema">tema 05 Indhold Redesign</a>, har jeg
+                    kun
+                    brugt én mediaquery, til desktop, da jeg
+                    altid starter med at designe til mobilen.
                 </p>
                 <p>
-                    Som vist på billede 2.2 og 2.4, kan man se at jeg har valgt en mediaquerie til henholdsvis mobil og
-                    desktop. Til senere
-                    projekter har jeg kun brugt mediaqueries til desktop. Et eksempel er i 05_grundlæggende_indhold
-                    (LINK), hvor der kun er
-                    mediaqueries om desktop udgaven.</p>
-
-                <!-- <img src="img/02web_stempel-19.svg" alt="stempel" class="stempel1"> -->
+                    I temaet fik jeg en forståelse for hvordan en hjemmeside bliver brugervenlig, og hvordan man gør
+                    den
+                    brugervenlig. Vi
+                    lærte om webkonventioner og designprincipper, såsom farver og gestaltlove. I <a href="#03_ux_ui_pr"
+                        class="link_tema">tema 03 UI/UX</a> kan man se jeg har implementeret de
+                    forskellige konventioner
+                    og designprincipper.</p>
             </div>
         </div>
 
 
+        <!-------------------- 03_ux DOKOMENTATION ---------------------->
 
-
-        <!-------------------- 03_ux 1 ---------------------->
-        <div class="main_div" id="03_ux">
+        <div class="main_div" id="03_ux_ui_doko">
+            <!-- Div Genereret af ChatGPT -->
             <div class="foto_div">
-                <!-- Second Set of Image and Buttons -->
                 <div class="foto_bill">
-                    <img id="bannerImage2" src="img/hvid.png" alt="hvid_foto">
+                    <img id="bannerImage2" src="img/03_ui.webp" alt="hvid_foto">
                 </div>
                 <div class="knapper">
-                    <button onclick="changeImage('bannerImage2','img/lilla.png')">lilla</button>
-                    <button onclick="changeImage('bannerImage2','img/groen.png')">grøn</button>
-                    <button onclick="changeImage('bannerImage2','img/hvid.png')">hvid</button>
+                    <button onclick="changeImage('bannerImage2','img/moodboard1-2.webp')">Foto 3.1</button>
+                    <button onclick="changeImage('bannerImage2','img/prototype2.webp')">Foto 3.2</button>
+                    <!-- <button onclick="changeImage('bannerImage2','img/03_gestalt_konventioner.webp')">Foto
+                        3.2</button>
+                    <button onclick="changeImage('bannerImage2','img/03_lighthouse.webp')">Foto 3.2</button> -->
                 </div>
             </div>
 
             <div class="txt_div">
                 <div class="overskift">
                     <div class="txt_overskift">
-                        <h2>03 UI/UX</h2>
+                        <h2>03 UX/UI</h2>
+                        <h3 class="orange2">Dokumentation</h3>
                         <div class="link">
-                            <a href="https://anikaborup.dk/kea/05_indhold/redesign/index.html">
-                                <h3>StrikkeKnit</h3>
+                            <a
+                                href="https://www.figma.com/file/5FSRB8k4SSGXsI3RPLLy3F/Strikkeknit?type=design&node-id=48%3A709&mode=design&t=WsDPKLeNe3S5gnSd-1">
+                                <h3>Find min procesdokumentation <span class="orange">her</span></h3>
                             </a>
                         </div>
-
                     </div>
-                    <img src="img/group15.svg" alt="fri" class="fri">
+                    <img src="img/stempel03.svg" alt="fri" class="fri">
                 </div>
-                <p>I Tema 02_web blev vi introduceret for et responsivt design. Dette betød at vores site skulle
-                    fungere
-                    på både mobilen og
-                    desktop.
-                    Dette kunne lade sig gøre ved at bruge mediaqueries, samt grid og flex i CSS.
-                </p>
                 <p>
-                    Det løste jeg ved at starte mit design til mobilen, her brugte jeg mediaqueries til at sortere
-                    hvad
-                    der hørte til mobil
-                    og til desktop.
-                    Dette kan ses i ned nedestående boks 2.
-                </p>
-                <p>
-                    Som vist på billede 2.2 og 2.4, kan man se at jeg har valgt en mediaquerie til henholdsvis mobil
+                    I Tema 03 UX/UI blev jeg introduceret for brugergrænseflader. Det indebar idéudvikling af en
+                    hjemmeside. Vi lærte nye
+                    måder at genere idéer på, bl.a. ved at lave moodboards <span class="foto_txt">Foto 3.1</span>,
                     og
-                    desktop. Til senere
-                    projekter har jeg kun brugt mediaqueries til desktop. Et eksempel er i 05_grundlæggende_indhold
-                    (LINK), hvor der kun er
-                    mediaqueries om desktop udgaven.</p>
+                    research – her brugte jeg deskresearch i form af
+                    statistikker, kvantitativt data, og kvalitativt data, i form af et interview af en person i
+                    målgruppen. Dette gjorde jeg
+                    for at min idé, ikke var hvad jeg tænkte målgruppen ville have, men hvad målgruppen rent faktisk
+                    ønskede.
+                </p>
+                <p>I temaet lærte vi også om brugeroplevelser. Det indebar hvordan man laver en hifi prototype i <a
+                        href="https://www.figma.com/file/5FSRB8k4SSGXsI3RPLLy3F/Strikkeknit?type=design&node-id=48%3A709&mode=design&t=WsDPKLeNe3S5gnSd-1"
+                        class="link_tema">Figma</a>.
+                    Prototypen
+                    var en efterfølger af den lofi prototype, wireframes, jeg først havde lavet <span
+                        class="foto_txt">Foto
+                        3.2</span>. Jeg lærte hvordan man gør en
+                    hifi prototype klikbar, så det er muligt at teste brugervenligheden tidligt i forløbet.</p>
+
+                <p>Til min hifi prototype blev jeg introduceret for 5-sekunders test og tænke højt test.
+                    Testmetoderne
+                    gav mig et indblik
+                    i, om min hjemmeside var brugervenlig. Jeg lærte vigtigheden af at udføre disse test. I min
+                    tænke
+                    højt test, blev jeg
+                    b.la. gjort opmærksom på, at ”sværhedsgraden” gerne måtte være fast på hjemmesiden, fremfor en
+                    hover-effekt, som jeg
+                    ellers havde tænkt.</p>
             </div>
         </div>
 
         <!----------------------- 03_UX 2 ------------------>
-        <div class="main_div" id="03_ui">
+        <div class="main_div" id="03_ux_ui_pr">
             <!-- First Set of Image and Buttons -->
             <div class="foto_div">
                 <div class="foto_bill">
-                    <img id="bannerImage3" src="img/02_web.png" alt="hvid_foto">
+                    <img id="bannerImage3" src="img/03_ui.png" alt="hvid_foto">
                 </div>
                 <div class="knapper">
-                    <button onclick="changeImage('bannerImage3','img/02_mobil.png')">Foto 2.1</button>
-                    <button onclick="changeImage('bannerImage3','img/02_desktop.png')">Foto 2.2</button>
-                    <button onclick="changeImage('bannerImage3','img/02_web.png')">Orginal</button>
+                    <button onclick="changeImage('bannerImage3','img/styletile1.webp')">Foto 3.3</button>
+                    <button onclick="changeImage('bannerImage3','img/hiraki.webp')">Foto
+                        3.2</button>
+                    <button onclick="changeImage('bannerImage3','img/03_lighthouse.png')">Orginal</button>
                 </div>
             </div>
 
@@ -180,35 +179,48 @@
                 <div class="overskift">
                     <div class="txt_overskift">
                         <h2>03 UI/UX</h2>
+                        <h3 class="orange2">Præsentation</h3>
                         <div class="link">
-                            <a href="https://anikaborup.dk/kea/05_indhold/redesign/index.html">
-                                <h3>StrikkeKnit</h3>
+
+                            <a href="https://anikaborup.dk/kea/03_ux/01_kodet_site/opskrift_kategori.html">
+                                <h3>Find min hjemmeside <span class="orange">her</span></h3>
                             </a>
                         </div>
 
                     </div>
-                    <img src="img/group15.svg" alt="fri" class="fri">
+                    <img src="img/stempel03_1.svg" alt="fri" class="fri">
                 </div>
-                <p>I Tema 02_web blev vi introduceret for et responsivt design. Dette betød at vores site skulle
-                    fungere
-                    på både mobilen og
-                    desktop.
-                    Dette kunne lade sig gøre ved at bruge mediaqueries, samt grid og flex i CSS.
-                </p>
+
+                <p>I Tema 03 UX/ UI havde jeg også til formål at fremlægge min hjemmeside. Præsentationen bestod af
+                    min
+                    idéudvikling, mine
+                    prototyper, lidt kode og tests, som jeg kom ind på i <a href="#03_ux_ui_doko" class="link_tema">tema
+                        03 UX /UI dokumentation.</a></p>
+
+                <p>I min præsentation havde jeg glemt at inkludere mit styletile <span class="foto_txt">Foto
+                        3.3</span>.
+                    Styletilet brugte jeg til at skabe et overblik
+                    over mit design undervejs da jeg lavede prototypen og kodede hjemmesiden. Mit styletile har en
+                    del
+                    mangler, det mangler
+                    bl.a. billeder, iconer og knapper. Derudover mangler mit styletile længere tekster med
+                    paragrafferne, da forståelsen af
+                    fonten forsvinder. <a href="#05_redesign" class="link_tema">I tema 05 indhold redesign</a>
+                    valgte
+                    jeg
+                    under præsentationen, netop at lave/snakke om styletilet, for at
+                    tilføje det her ting.</p>
                 <p>
-                    Det løste jeg ved at starte mit design til mobilen, her brugte jeg mediaqueries til at sortere
-                    hvad
-                    der hørte til mobil
-                    og til desktop.
-                    Dette kan ses i ned nedestående boks 2.
+                    I præsentationen kom jeg ind på de brugergrænseflader jeg havde lært i <a href="#02_web"
+                        class="link_tema">tema 02 web. </a> Webkonventionerne kom til
+                    udtryk i mit logo, navigationen, knapper og brugen af grid. Som man kan se på <span
+                        class="foto_txt">Foto
+                        3.4</span> var hirakiet helt i uorden, og skaber forvirring, feks. blev en p blev brugt som
+                    en
+                    h3. Jeg kom
+                    også
+                    ind på gestaltlovene fra hjemmesiden <span class="foto_txt">Foto 3.5.</span>
                 </p>
-                <p>
-                    Som vist på billede 2.2 og 2.4, kan man se at jeg har valgt en mediaquerie til henholdsvis mobil
-                    og
-                    desktop. Til senere
-                    projekter har jeg kun brugt mediaqueries til desktop. Et eksempel er i 05_grundlæggende_indhold
-                    (LINK), hvor der kun er
-                    mediaqueries om desktop udgaven.</p>
             </div>
         </div>
 
@@ -219,47 +231,54 @@
             <!-- First Set of Image and Buttons -->
             <div class="foto_div">
                 <div class="foto_bill">
-                    <img id="bannerImage4" src="img/02_web.png" alt="hvid_foto">
+                    <img id="bannerImage4" src="img/04_animation.webp" alt="hvid_foto">
                 </div>
                 <div class="knapper">
-                    <button onclick="changeImage('bannerImage4','img/02_mobil.png')">Foto 2.1</button>
-                    <button onclick="changeImage('bannerImage4','img/02_desktop.png')">Foto 2.2</button>
-                    <button onclick="changeImage('bannerImage4','img/02_web.png')">Orginal</button>
+                    <button onclick="changeImage('bannerImage4','img/baggrunde1.webp')">Foto 4.1</button>
+                    <button onclick="changeImage('bannerImage4','img/figurelementer1.webp')">Foto 4.2</button>
+                    <button onclick="changeImage('bannerImage4','img/04_animation_css.webp')">Foto 4.3</button>
                 </div>
             </div>
-
 
             <div class="txt_div">
                 <div class="overskift">
                     <div class="txt_overskift">
-                        <h2>04 animation</h2>
+                        <h2>04 ANIMATION</h2>
                         <div class="link">
-                            <a href="https://anikaborup.dk/kea/05_indhold/redesign/index.html">
-                                <h3>Farmer Frank</h3>
+                            <a href="https://anikaborup.dk/kea/04_animation/website/forside.html">
+                                <h3>Find min hjemmeside <span class="orange">her</span></h3>
                             </a>
                         </div>
                     </div>
-                    <img src="img/group15.svg" alt="fri" class="fri">
+                    <img src="img/stempel04.svg" alt="fri" class="fri">
                 </div>
-                <p>I tema 04_animation var vores formål at designe et spil, ved hjælp af figurelementer,
+                <p>I tema 04 animation havde jeg til formål at designe et simpelt spil, ved hjælp af figurelementer,
                     ui-elementer,
-                    css-animationer og
-                    javascript. </p>
-                <p>
-                    Jeg har designet mine figurelementer i Adobe Illustator med henblik på kontraster og
-                    designprincipper. (se boks 4.1)
-                    I Javascript er der b.la. gjort brug af querySelectors og addEventListeners, for at få spillet
-                    til
-                    at fungere samt gøre
-                    mere interessant vha. lyd. (se boks 4.2)
-                    Derudover er der tilføjet CSS-animationer ved hjælp af Keyframes. (se boks 4.3)
-                </p>
-                <p>
-                    Denne færdighed har gjort mig i stand til at bruge JavaScript og CSS-animationer i min portfolio
-                    forside.
+                    css-animationer og JavaScript. Til spillet lavede jeg en papirsprototype for at få en visuel ide
+                    om
+                    hvordan spillet
+                    ville fungere. Herefter tegnede jeg baggrundene i Adobe Illustrator med henblik på flatdesign,
+                    kontraster
+                    og atmosfærisk
+                    perspektiv <span class="foto_txt">Foto 4.1</span>. Mine figurelementer er skitseret i hånden og
+                    justeret med forskellige designprincipper for
+                    karakterdesign, som line of action og kiki og bouba <span class="foto_txt">Foto 4.2</span>.</p>
 
-                </p>
-
+                <p>I temaet fik jeg lært at bruge CCS-animationer vha. keyframes, som transform, translate, rotate
+                    og
+                    scale <span class="foto_txt">Foto 4.3</span>. Nogle af de
+                    CSS-animationer har jeg også brugt på min forside af min <a
+                        href="https://anikaborup.dk/kea/06_portfolio/portfolio/forside.html"
+                        class="link_tema">portfolio</a>. Temaets helt nye læring
+                    var Javascript, her
+                    gjorde jeg brug af bl.a. addClass, querySelector, addEventlistener, samt events såsom click og
+                    animationinteration.
+                    Dette var for at gøre spillet interaktivt.</p>
+                <p>De her færdigheder har gjort mig i stand til at opbygge en portfolio hvor hjemmesidens forside
+                    består
+                    af
+                    CSS-animationer, og at hjemmesiden er designet efter flat design, for at skabe en illusion om
+                    postkort.</p>
             </div>
         </div>
 
@@ -269,58 +288,53 @@
             <!-- First Set of Image and Buttons -->
             <div class="foto_div">
                 <div class="foto_bill">
-                    <img id="bannerImage5" src="img/02_web.png" alt="hvid_foto">
+                    <img id="bannerImage5" src="img/05_videosite.webp" alt="hvid_foto">
                 </div>
                 <div class="knapper">
-                    <button onclick="changeImage('bannerImage5','img/02_mobil.png')">Foto 2.1</button>
-                    <button onclick="changeImage('bannerImage5','img/02_desktop.png')">Foto 2.2</button>
-                    <button onclick="changeImage('bannerImage5','img/02_web.png')">Orginal</button>
+                    <button onclick="changeImage('bannerImage5','img/videosite_storyboard.webp')">Foto 5.1</button>
+                    <button onclick="changeImage('bannerImage5','img/videosite_brugt_storyboard.webp')">Foto
+                        5.2</button>
+                    <button onclick="changeImage('bannerImage5','img/videosite_video.webp')">Foto 5.3</button>
                 </div>
             </div>
+
             <div class="txt_div">
                 <div class="overskift">
                     <div class="txt_overskift">
                         <h2>05 INDHOLD</h2>
+                        <h3 class="orange2">Videosite</h3>
                         <div class="link">
-                            <a href="https://anikaborup.dk/kea/05_indhold/redesign/index.html">
-                                <h3>Videosite</h3>
+                            <a href="https://anikaborup.dk/kea/05_indhold/videosite/index.html">
+                                <h3>Find min hjemmeside <span class="orange">her</span></h3>
                             </a>
                         </div>
                     </div>
                     <div>
-                        <img src="img/group15.svg" alt="fri" class="fri">
+                        <img src="img/stempel05_1.svg" alt="fri" class="fri">
                     </div>
                 </div>
-
-
-
-                <p>I Tema 05_grundlæggende_indhold var formålet at få en forståelse for videoudstyr til brug i
-                    digital
+                <p>I tema 05 indhold videosite var formålet at få en forståelse for videoudstyr til brug i digital
                     medieproduktion,
                     præproduktion og postproduktion.
                 </p>
-                <p>
-                    Til videosite videoen fik vi lov til at filme Tanja, som har en passion for malerarbejde.
-                    Til
-                    videoudstyr gjorde vi brug
-                    af Smartphones og DJI Osmo Pocket. Præproduktionen bestod at vi i gruppesamarbejde lavede et
-                    storyboard. Samt
-                    postproduktion hvor vi klippede hver for sig
+                <p>Til videositet fik min gruppe lov til at filme Tanja, som har en passion for malerarbejde. I
+                    samarbejde med gruppen,
+                    lavede vi en interviewguide og storyboards, til når vi skulle filme <span class="foto_txt">Foto
+                        5.1</span>. Vi lærte at vores storyboard ikke kunne
+                    bruges særlig meget, da Tanjas arbejdsopgaver ikke hang i tråd med det vi havde på storyboardet
+                    <span class="foto_txt">Foto 5.2</span>, og var
+                    derfor næsten ubrugelig, og vi måtte improvisere <span class="foto_txt">Foto 5.3</span>. Her
+                    lærte
+                    jeg var vigtigt at overensstemme med den interviewet person om hvad der skal filmes, for kunne
+                    være
+                    bedst muligt forbredt. Dette gjorde vi i <a href="#05_redesign" class="link_tema">tema 05
+                        indhold redesign</a>
                 </p>
-                <p>
-                    Vores storyboards kunne ikke bruges, da Tanjas opgave for dagen ikke det typiske
-                    malerarbejde
-                    som vi
-                    ufaglærte kender
-                    til. Derfor lærte jeg vigtigheden af at forhøre sig om omstændighederne og
-                    forventningsafstemme
-                    med
-                    hinanden, hvad der
-                    skal ske. Dette gjorde vi i opgave 05_grundlæggende_indhold redesign (LINK), som gjorde at
-                    storyboards var nemmere at
-                    bruge</p>
+                <p>Til selve postproduktionen fik jeg kendskab til Premiere Pro, hvor jeg klippede videoen. Jeg
+                    lærte
+                    hvordan man lægger en
+                    video eksternt, fra YouTube og eget domæne ind i HTML, så den vises på min hjemmeside.</p>
             </div>
-
         </div>
 
         <!-- 05_redesign -->
@@ -328,63 +342,89 @@
             <!-- First Set of Image and Buttons -->
             <div class="foto_div">
                 <div class="foto_bill">
-                    <img id="bannerImage6" src="img/02_web.png" alt="hvid_foto">
+                    <img id="bannerImage6" src="img/05_redesign.webp" alt="hvid_foto">
                 </div>
                 <div class="knapper">
-                    <button onclick="changeImage('bannerImage6','img/02_mobil.png')">Foto 2.1</button>
-                    <button onclick="changeImage('bannerImage6','img/02_desktop.png')">Foto 2.2</button>
-                    <button onclick="changeImage('bannerImage6','img/02_web.png')">Orginal</button>
+                    <button onclick="changeImage('bannerImage6','img/05_redesign1.webp')">Foto 5.4</button>
+                    <button onclick="changeImage('bannerImage6','img/05_bert.webp')">Foto 5.5</button>
                 </div>
-            </div>
 
+            </div>
             <div class="txt_div">
                 <div class="overskift">
                     <div class="txt_overskift">
                         <h2>05 INDHOLD</h2>
+                        <h3 class="orange2">Redesign</h3>
                         <div class="link">
                             <a href="https://anikaborup.dk/kea/05_indhold/redesign/index.html">
-                                <h3>Redesign</h3>
+                                <h3>Find min hjemmeside <span class="orange">her</span></h3>
                             </a>
                         </div>
-
                     </div>
-                    <img src="img/group15.svg" alt="fri" class="fri">
+                    <img src="img/stempel05_2.svg" alt="fri" class="fri">
                 </div>
+                <p>I tema 05 indhold redesign var formålet at forbedre brugeroplevelsen for en virksomheds
+                    hjemmeside
+                    ved et redesign.
+                    Denne del af opgaven lagde vægt på brug af test for at se om brugeroplevelsen var blevet
+                    forbedret.
+                    Opgaven gik også ud
+                    på at optage, og klippe en video ligesom i <a href="#05_videosite" class="link_tema">tema 05
+                        indhold
+                        videosite.</a>
+                </p>
+                <p>Vi undersøgte virksomhedens nuværende site, deres målgruppe og wireframes. For at forbedre
+                    brugeroplevelsen lavede vi en
+                    5 sekunders test <span class="foto_txt">Foto 5.4</span> og en BER-Test for at vide hvad
+                    brugerens
+                    oplevelse var af den nuværende hjemmeside. Efter vi
+                    undersøgte virksomhedens hjemmeside kunne vi udarbejde et redesign.</p>
 
-                <p>I Tema 05_grundlæggende_indhold var formålet at forbedre brugeroplevelsen for en virksomheds
-                    hjemmeside vha. at
-                    redesign.
-                </p>
-                <p>
-                    For at forbedre brugeroplevelsen undersøgte vi virksomhedens nuværende site, med en
-                    5-sekunders
-                    test
-                    og en BER-Test, som
-                    vi også brugte til den redesignet udgave.
-                </p>
-                <p>
-                    Testene viste hvor væsenlig en funktion de har, for at se om brugeroplevelsen er forbedret.
-                    Dette
-                    har jeg også gjort
-                    brug af i min portfolio opgave (LINK)</p>
+                <p>Vi kunne i vores 5 sekunderes test, se at brugerne fik en bedre forståelse af hvad hjemmesiden
+                    gik ud
+                    på. Vores BER-Test
+                    viste at hjemmesiden fremstod mere forståelig og indbydende <span class="foto_txt">Foto
+                        5.5</span>.
+                    Vi havde ikke udført en BERT-test på vores prototype i
+                    Figma, da vi kun havde udarbejdet en i lofi format. Dette betød at vi ikke fik justere
+                    undervejs,
+                    hvilket havde
+                    konsekvenser for brugervenligheden.</p>
             </div>
         </div>
+        <img src="img/header9.svg" alt="headeren" class="bund">
 
 
         <script>
             function changeImage(imageId, fileName) {
                 let img = document.querySelector("#" + imageId);
-                if (img) {
-                    img.setAttribute("src", fileName);
-                } else {
-                    console.error("Image with ID " + imageId + " not found.");
-                }
+                img.setAttribute("src", fileName);
             }
         </script>
 
 
         <script src="burgermenu.js"></script>
     </main>
+
+
+
     <footer>
+        <div class="hele_footer">
+            <div class="footer_txt">
+                <h3>Anika Borup Sørensen</h3>
+                <div>
+                    <img src="img/mail_icon.svg" alt="mail" class="mail_icon">
+                    <a class="mailen" href="mailto:anso0004@stud.kea.dk">Anso0004@stud.kea.dk</a>
+                </div>
+            </div>
+            <div class="iconer">
+                <a href="https://www.linkedin.com/">
+                    <img src="img/linkedin_icon2.svg" alt="linkedin">
+                </a>
+                <a href="https://github.com/anso0004/portfolio">
+                    <img src="img/github_icon.svg" alt="github">
+                </a>
+            </div>
+        </div>
 
     </footer>
