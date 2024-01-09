@@ -88,14 +88,14 @@ main {
 }
 
 .port_slide {
-  animation-name: slide_kf;
+  animation-name: port_slide_kf;
   animation-duration: 5s;
   animation-timing-function: linear;
   animation-iteration-count: 1;
   animation-fill-mode: forwards;
 }
 
-@keyframes slide_kf {
+@keyframes port_slide_kf {
   0% {
     transform: translateX(-100%);
   }
@@ -105,14 +105,14 @@ main {
 }
 
 .folio_slide {
-  animation-name: slide2_kf;
+  animation-name: folio_slide_kf;
   animation-duration: 5s;
   animation-timing-function: linear;
   animation-iteration-count: 1;
   animation-fill-mode: forwards;
 }
 
-@keyframes slide2_kf {
+@keyframes folio_slide_kf {
   0% {
     transform: translateX(260%);
   }
@@ -122,14 +122,14 @@ main {
 }
 
 .stempel_scale {
-  animation-name: slide3_kf;
+  animation-name: stempel_scale_kf;
   animation-duration: 6s;
   animation-timing-function: linear;
   animation-iteration-count: 1;
   animation-fill-mode: forwards;
 }
 
-@keyframes slide3_kf {
+@keyframes stempel_scale_kf {
   0% {
     transform: scale(30);
     opacity: 0;

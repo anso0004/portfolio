@@ -29,6 +29,15 @@ h2 {
   font-size: 1rem;
   border-bottom: solid 2px var(--orange);
 }
+
+.link_tema:hover {
+  font-family: var(--font_1);
+  color: var(--orange);
+  font-size: 1rem;
+  font-weight: 1000;
+  border-bottom: solid 2px var(--orange);
+}
+
 /* Første hvide kasse */
 .main_div {
   padding: 3%;

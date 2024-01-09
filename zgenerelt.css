@@ -134,7 +134,7 @@ a.active-nav::after {
 } */
 
 .link {
-  margin-bottom: 2%;
+  /* margin-bottom: 2%; */
   letter-spacing: 1.5px;
   border-radius: 10px;
   text-align: center;
@@ -334,7 +334,7 @@ li > a.active-nav::after {
 /********************* FOOTER  **********************/
 .bund {
   transform: rotate(180deg);
-  margin: -8px;
+  margin: -6px;
 }
 
 .iconer {
